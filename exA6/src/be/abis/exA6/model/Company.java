@@ -10,10 +10,6 @@ public class Company {
 		this.address = a1;
 	}
 	
-	public Company() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public String getName() {
 		return name;
 	}

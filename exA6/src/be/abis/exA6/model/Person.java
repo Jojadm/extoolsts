@@ -8,21 +8,20 @@ public class Person {
 	private String firstName;
 	private String lastName;
 	private LocalDate birthDate;
-	private Company company = new Company();
+	private Company company;
 	
-	public Person(int PersonNumber, String firstName, String lastName, LocalDate birthDate, Company company) {
+	public Person(int personNumber, String firstName, String lastName, LocalDate birthDate, Company company) {
 		// TODO Auto-generated constructor stub
-		this.personNumber = PersonNumber;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.birthDate = birthDate;
+		this(personNumber, firstName, lastName, birthDate);
 		this.company = company;
 	}
 	
-	
 	public Person(int personNumber, String firstName, String lastName, LocalDate birthDate) {
 		// TODO Auto-generated constructor stub
-		this(personNumber, firstName, lastName, birthDate, null);
+		this.personNumber=personNumber;
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.birthDate=birthDate;
 	}
 
 	public int getPersonNumber() {
@@ -62,11 +61,11 @@ public class Person {
 	}
 	
 	public String toString() {
-		String data;
+		String data = "Person " + this.getPersonNumber() + ": " +this.getFirstName() + " " + this.getLastName() + " (" +calculateAge() + " years old) ";
 		if (this.company == null) {
-			data = "Person " + this.getPersonNumber() + ": " +this.getFirstName() + " " + this.getLastName() + " (" +calculateAge() + "years old) is not employed for the moment"; 
+			data = data + "is not employed for the moment"; 
  		} else { 
-			data = "Person " +this.getPersonNumber() + ": " +this.getFirstName()+ " " + this.getLastName() + " (" +calculateAge() + "years old) works for " +this.company.getName() + " in " +this.company.getAddress().getTown();
+			data = data + "works for " +this.company.getName() + " in " +this.company.getAddress().getTown();
 		}
 		return data;
 	}
