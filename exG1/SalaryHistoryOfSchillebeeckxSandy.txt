@@ -1,0 +1,3 @@
+Salary of Sandy Schillebeeckx at 25 is 1700.0
+Salary of Sandy Schillebeeckx at 30 is 1751.0
+Salary of Sandy Schillebeeckx at 35 is 1803.53

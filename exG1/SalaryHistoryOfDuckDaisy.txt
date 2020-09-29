@@ -1,0 +1,4 @@
+Salary of Daisy Duck at 28 is 1800.0
+Salary of Daisy Duck at 33 is 1854.0
+Salary of Daisy Duck at 38 is 1909.6200000000001
+Salary of Daisy Duck at 43 is 1966.9086000000002

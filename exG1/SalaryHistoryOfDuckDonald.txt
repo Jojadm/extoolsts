@@ -1,0 +1,6 @@
+Salary of Donald Duck at 20 is 17500.0
+Salary of Donald Duck at 25 is 18025.0
+Salary of Donald Duck at 30 is 18565.75
+Salary of Donald Duck at 35 is 19122.7225
+Salary of Donald Duck at 40 is 19696.404175
+Salary of Donald Duck at 45 is 20287.29630025
