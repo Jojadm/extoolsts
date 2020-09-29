@@ -20,13 +20,9 @@ public class Person {
 	}
 	
 	
-		public Person(int personNumber, String firstName, String lastName, LocalDate birthDate) {
+	public Person(int personNumber, String firstName, String lastName, LocalDate birthDate) {
 		// TODO Auto-generated constructor stub
-		this.personNumber=personNumber;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.birthDate = birthDate;
-		this.company = null;
+		this(personNumber, firstName, lastName, birthDate, null);
 	}
 
 	public int getPersonNumber() {
