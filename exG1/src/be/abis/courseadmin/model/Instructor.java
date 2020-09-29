@@ -64,23 +64,8 @@ public class Instructor {
 	}
 	
 	public void printSalaryHistory() throws IOException {
-		double calcSalary=this.startSalary;
-		int calcSeniority=0;
-		int calcAge = this.startAge;
-		List<String> printLines = new ArrayList<String>();
-		
-		do {
-			printLines.add("Salary of " +name+ " " +lastName+ " at " +calcAge+ " is " +calcSalary);
-			calcSalary*=1.03;
-			calcAge+=5;
-			calcSeniority+=5;
-		} while ((calcAge<=this.age) && (calcSeniority<=35));
-		if (calcSeniority>35) {
-			printLines.add("Maximum salary reached");
-		}
-		writeToFile(printLines);
+		printSalaryHistory("SalaryHistoryOf" +this.getName()+ ".txt");
 	}
-
 	public void printSalaryHistory(String filename) throws IOException {
 		double calcSalary=this.startSalary;
 		int calcSeniority=0;
@@ -98,16 +83,7 @@ public class Instructor {
 		}
 		writeToFile(printLines, filename);
 	}
-	private void writeToFile(List<String> printLines) throws IOException {
-		Path pathToFile= Paths.get("salaryhistory"+name+".txt");
-		BufferedWriter writer = Files.newBufferedWriter(pathToFile);
-		for (String line : printLines) {
-			System.out.println("Printing: " +line);
-			writer.write(line);
-			writer.newLine();
-		}
-		writer.close();	
-	}
+
 	
 	private void writeToFile(List<String> printLines, String filename) throws IOException {
 		Path pathToFile= Paths.get(filename);
@@ -119,6 +95,8 @@ public class Instructor {
 		}
 		writer.close();	
 	}
+	
+	
 	
 	public String toString() {
 		String instrData=this.getName() + " " + this.getLastName() + " " + this.getAge() + " " + this.getStartAge() + " " + this.getStartSalary();

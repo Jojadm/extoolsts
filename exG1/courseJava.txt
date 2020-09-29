@@ -1,6 +1,6 @@
 Course title: Java Number of days: 2 Price per day: 300.0 Prior knowledge requested : false
 Number of instructors: 2
-Instructor: Sandy Schillebeeckx 38 25 1700.0
-Instructor: Sonja De Meersman 45 32 1600.0
+Instructor: Donald Duck 45 20 17500.0
+Instructor: Daisy Duck 44 28 1800.0
 Total price (no taxes to pay) : 726.0
 This price for this course is OK

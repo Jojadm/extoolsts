@@ -84,7 +84,7 @@ public class Course {
 		content.add("Course title: " +this.title+ " Number of days: " +this.nbrDays+ " Price per day: " +this.pricePerDay+ " Prior knowledge requested : " +this.priorKnowledgeRequired);
 		content.add("Number of instructors: " +this.instructors.size());
 		for (Instructor instr : this.instructors) {
-			content.add("Instructor: " +instr.toString());
+			content.add("Instructor: " +instr);
 			String filename = "SalaryHistoryOf" +instr.getLastName()+ instr.getName()+ ".txt";
 			instr.printSalaryHistory(filename);
 		}
@@ -105,6 +105,7 @@ public class Course {
 	
 	private void writeToFile(List<String> printLines) throws IOException {
 		Path pathToFile= Paths.get("course"+this.title+".txt");
+		System.out.println("Filename: Course"+this.title+".txt");
 		BufferedWriter writer = Files.newBufferedWriter(pathToFile);
 		for (String line : printLines) {
 			System.out.println("Printing: " +line);

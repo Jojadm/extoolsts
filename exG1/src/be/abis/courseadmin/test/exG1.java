@@ -18,7 +18,7 @@ public class exG1 {
 		co1.addInstructor(instr1b);
 		
 		
-		Course co2 = new Course("Java", 2, 300, false);
+		Course co2 = new Course("Cobol", 2, 200, true);
 		Instructor instr2a = new Instructor ("Sandy", "Schillebeeckx", 38, 25, 1700.0);
 		Instructor instr2b = new Instructor ("Sonja", "De Meersman", 45, 32, 1600.0);
 		co2.addInstructor(instr2a);
